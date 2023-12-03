@@ -46,17 +46,24 @@ h1{
 }
 
 .photos-box{
-    width: 75%/3;
+    width: 70%;
     margin: 0 auto;
     background-color: purple;
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .black-box{
-    width: 25%;
-    height: 25%;
+    width: 30%;
+    height: 100px;
+    margin: 50px 0 ;
     background-color: black;
+}
+
+li:hover{
+    margin-bottom: 0;
+    border-bottom: 5px solid #F9E248;
 }
