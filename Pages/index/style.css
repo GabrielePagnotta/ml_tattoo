@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'American-type';
+    src: url(../../Font/AmericanTypewriterRegular.ttf);
+}
+
+@font-face {
+    font-family: 'stencil';
+    src: url(../../Font/Stencil_Std_Bold.ttf);
+}
+
+@font-face {
+    font-family: 'typewriter';
+    src: url(../../Font/Typewriter-Serial_Bold.ttf);
+}
+*{
+    font-family: 'American-type',sans-serif;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+li{
+    width: 100%;
+    list-style: hidden;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+li:nth-child(2){
+    margin: 6rem 0;
+}
+
+ul{
+    padding: 0;
+}
+
+.fullcontainer-box{
+    display: flex;
+    margin: 0;
+}
+
+.box-left{
+    width: 20%;
+    border-right: 2px solid black;
+    height: 100vh;
+}
+
+.box-right{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.box-logo{
+    display: flex;justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.logo-img{
+    width: 50%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.under-text{
+    width: 100%;
+    margin: 0.8rem 0;
+    font-weight: bold;
+}
+
+h1{
+
+    width: 50%;
+    margin: 10px auto;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+h1:hover{
+
+    border-bottom: 5px solid #F9E248;
+}
+
+.temporary-empty-box{
+    height: 50%;
+    /*background-color: red;*/
+}
+
+.box-center{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    /*background-color: blueviolet;*/
+}
+
+.last-box {
+    height: 30%;
+    /*background-color: brown;*/
+    display: flex;
+    justify-content: end;
+}
+
+.name-container{
+    position:absolute;
+    display: flex;
+    background-color: #F9E248;
+    align-items: center;
+    justify-content: center;
+    right: 50px;
+    bottom: 230px;
+}
+
+.text-inside-box{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    font-family: stencil, sans-serif;
+}
+
+.fa-circle{
+    font-size: 0.5rem;
+}
+
+.tattoo-text{
+    position: absolute;
+    bottom: 18.5%;
+    color: white;
+    right: 3%;
+    font-size: 2rem;
+    font-family: typewriter,sans-serif;
+    text-shadow: 0 0 3px black, 0 0 5px black;
+
+}
+
+
+@media only screen and (max-width:576px){
+    .fullcontainer-box{
+        display: block;
+    }
+
+    .temporary-empty-box{
+        display: none;
+        background-color: #F9E248;
+        /*background-color: red;*/
+    }
+
+    .box-right{
+        display: none;
+
+    }
+
+    .box-left{
+        width: 100%;
+
+    }
+
+    .logo-img{
+        margin-bottom: 0;
+    }
+
+    li:nth-child(2){
+        margin: 3rem 0;
+    }
+
+    h1{
+        font-size: 1.8rem;
+    }
+
+    .name-container{
+        padding: 1rem;
+        bottom: 7%;
+        right: 0;
+    }
+
+    .logo-img{
+        width: 30%;
+    }
+    .tattoo-text{
+        bottom: 0%;
+    }
+}
+@media only screen and (max-width:1300px){
+    li:nth-child(2){
+        margin: 4rem 0;
+    }
+
+    h1{
+        width: 100%;
+    }
+    .tattoo-text{
+        bottom: 23%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .tattoo-text{
+        bottom: 0%;
+    }
+}
+
+
+@media only screen and (max-width: 415px){
+    li:nth-child(2){
+        margin: 1.5rem 0;
+    }
+
+    .tattoo-text{
+        bottom: 0%;
+    }
+}
+
+
+@media only screen and (max-width:350px){
+    .logo-img{
+        width: 20%;
+        margin: 0.6rem;
+    }
+    li:nth-child(2){
+        margin: 2rem 0;
+    }
+
+    .text-inside-box{
+        font-size: 1.2rem;
+    }
+
+    .name-container{
+        padding: 0.5rem;
+        bottom: 3%;
+        right: 0;
+    }
+
+    .tattoo-text{
+        bottom: 0;
+        margin: 0;
+        font-size: 1.8rem;
+    }
+
+}
