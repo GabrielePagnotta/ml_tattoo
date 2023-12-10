@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'American-type';
     src: url(../../Font/AmericanTypewriterRegular.ttf);
@@ -15,6 +16,11 @@
 
 *{
     font-family: 'American-type',sans-serif;
+    
+}
+
+.mobile-navbar{
+    display: none;
 }
 
 .bold{
@@ -30,18 +36,20 @@ li{
     float: left;
     list-style: none;
     margin: 1rem 0;
+    box-sizing: border-box;
 }
 
 li:nth-child(2){
-    margin: 1rem 30rem;
+    margin: 1rem 30rem !important;
 }
 
 .box-creazioni{
+    width: 13%;
     background-color: #F9E248;
-    padding: 0 50px;
 }
 
 h1{
+    width:100%;
     margin: 0;
 }
 
@@ -67,3 +75,93 @@ li:hover{
     margin-bottom: 0;
     border-bottom: 5px solid #F9E248;
 }
+
+.creazione-navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    margin: 20px auto;
+}
+
+
+/* ------------------------------------------------------- */
+
+/* Responsive */
+
+@media ((min-width: 0px) and (max-width: 500px)) {
+    .navbar{
+        display: none;
+      }
+      .creazione-navbar{
+        display: flex;
+        align-items: center;
+        }
+      .box-creazioni{
+        width: 70%;
+        text-align: center;
+      }
+      .mobile-navbar{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+      }
+      li:nth-child(2){
+        margin: 10px auto !important;
+     }
+    li{
+        width: 60%;
+        height: 40px;
+        margin: 0 auto;
+    }
+}
+
+    @media ((min-width: 500px) and (max-width: 800px)) {
+      .navbar{
+        display: none;
+      }
+      .creazione-navbar{
+        display: flex;
+        align-items: center;
+        }
+      .box-creazioni{
+        width: 70%;
+        text-align: center;
+      }
+      .mobile-navbar{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+      }
+      li:nth-child(2){
+        margin: 10px auto !important;
+     }
+    li{
+        width: 50%;
+        height: 40px;
+        margin: 0 auto;
+    }
+ 
+ 
+    
+}
+
+@media ((min-width: 810px) and (max-width: 1300px)) {
+   .navbar{
+    align-items:center ;
+    justify-content: center;
+   }
+   li:nth-child(2){
+    margin: 15px 300px !important;
+ }
+ .box-creazioni{
+    width: 20%;
+ }
+}
+  
