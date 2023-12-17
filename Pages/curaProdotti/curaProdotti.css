@@ -43,34 +43,6 @@ li:nth-child(2) {
     margin: 1rem 30rem !important;
 }
 
-.box-creazioni {
-    width: 13%;
-    background-color: #F9E248;
-}
-
-h1 {
-    width: 100%;
-    margin: 0;
-}
-
-.photos-box {
-    width: 70%;
-    margin: 0 auto;
-    background-color: purple;
-    padding: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.black-box {
-    width: 30%;
-    height: 100px;
-    margin: 50px 0;
-    background-color: black;
-}
-
 li:hover {
     margin-bottom: 0;
     border-bottom: 5px solid #F9E248;
@@ -84,6 +56,55 @@ li:hover {
     margin: 20px auto;
 }
 
+.box-creazioni {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    background-color: #F9E248;
+}
+
+.body-box {
+    width: 75%;
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.articlebox {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.black-box {
+    width: 30%;
+    height: 100%;
+    background-color: black;
+}
+
+.squares-box {
+    width: 70%;
+    background-color: red;
+}
+
+.margin-start {
+    margin-left: 150px;
+}
+
+.margin-end {
+    margin-left: 350px;
+}
+
+.text-box {
+    width: 50%;
+    background-color: blueviolet
+}
+
+.square-position {
+    display: flex;
+    height: 100%
+}
 
 /* ------------------------------------------------------- */
 
@@ -122,6 +143,50 @@ li:hover {
         height: 40px;
         margin: 0 auto;
     }
+
+    .body-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-box {
+        width: 100%;
+    }
+
+    .squares-box {
+        width: 100%;
+        height: 50%;
+    }
+
+    .square-position {
+        justify-content: space-between;
+    }
+
+    .margin-start {
+        margin-left: 0px;
+    }
+
+    .margin-end {
+        margin-left: 0px;
+    }
+
+    .squares-box {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .black-box {
+        width: 40%;
+    }
+
+    .box-creazioni {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+
+    }
 }
 
 @media ((min-width: 500px) and (max-width: 800px)) {
@@ -148,6 +213,8 @@ li:hover {
         width: 100%;
     }
 
+
+
     li:nth-child(2) {
         margin: 10px auto !important;
     }
@@ -159,6 +226,14 @@ li:hover {
     }
 
 
+    .box-creazioni {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+
+    }
 
 }
 
@@ -173,6 +248,17 @@ li:hover {
     }
 
     .box-creazioni {
-        width: 20%;
+        width: 40%;
+    }
+
+    .margin-start {
+        margin-left: 150px;
+    }
+
+    .margin-end {
+        margin-left: 300px;
+
+
+
     }
 }
