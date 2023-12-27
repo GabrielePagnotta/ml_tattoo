@@ -43,34 +43,6 @@ li:nth-child(2) {
     margin: 1rem 30rem !important;
 }
 
-.box-creazioni {
-    width: 13%;
-    background-color: #F9E248;
-}
-
-h1 {
-    width: 100%;
-    margin: 0;
-}
-
-.photos-box {
-    width: 70%;
-    margin: 0 auto;
-    background-color: purple;
-    padding: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.black-box {
-    width: 30%;
-    height: 100px;
-    margin: 50px 0;
-    background-color: black;
-}
-
 li:hover {
     margin-bottom: 0;
     border-bottom: 5px solid #F9E248;
@@ -79,29 +51,134 @@ li:hover {
 .creazione-navbar {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     width: 75%;
     margin: 20px auto;
 }
 
+.box-creazioni {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-testo {
+    width: 20%;
+    text-align: center;
+    background-color: #F9E248;
+    margin-bottom: 50px;
+}
+
+.text-box {
+    border: 1px solid black;
+    width: 480px
+}
+
+.body-box {
+    width: 75%;
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.articlebox {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.black-box {
+    width: 30%;
+    height: 100%;
+    background-color: black;
+}
+
+.squares-box {
+    width: 70%;
+    background-color: red;
+}
+
+.margin-start {
+    margin-left: 150px;
+}
+
+.margin-end {
+    margin-left: 350px;
+}
+
+
+.square-position {
+    display: flex;
+    height: 100%
+}
+
+.box-due {
+    display: flex;
+    justify-content: space-between
+}
+
+.box-contatti {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+img {
+    width: 20%;
+    margin-right: 10px;
+}
+
+.text-size {
+    font-size: 1.2rem;
+}
+
+.social-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.single-info-box {
+    display: flex;
+}
 
 /* ------------------------------------------------------- */
 
 /* Responsive */
 
 @media ((min-width: 0px) and (max-width: 500px)) {
+    #box-testo-1 {
+        display: none;
+    }
+
     .navbar {
         display: none;
     }
 
+    .single-info-box {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-testo {
+        width: 100%;
+    }
+
+    .box-due {
+        flex-direction: column;
+    }
+
     .creazione-navbar {
-        display: none;
         display: flex;
         align-items: center;
     }
 
     .box-creazioni {
-        display: none;
+        width: 70%;
+        text-align: center;
     }
 
     .mobile-navbar {
@@ -121,6 +198,31 @@ li:hover {
         width: 60%;
         height: 40px;
         margin: 0 auto;
+    }
+
+    .body-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-box {
+        width: 100%;
+    }
+
+
+    .box-creazioni {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+
+    }
+
+    .box-contatti {
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -148,6 +250,8 @@ li:hover {
         width: 100%;
     }
 
+
+
     li:nth-child(2) {
         margin: 10px auto !important;
     }
@@ -159,20 +263,39 @@ li:hover {
     }
 
 
+    .box-creazioni {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+
+    }
 
 }
 
 @media ((min-width: 810px) and (max-width: 1300px)) {
+    .box-creazioni {
+        width: 100%;
+
+    }
+
     .navbar {
         align-items: center;
         justify-content: center;
     }
 
+
     li:nth-child(2) {
         margin: 15px 300px !important;
     }
 
-    .box-creazioni {
-        width: 20%;
+
+    .margin-start {
+        margin-left: 150px;
+    }
+
+    .margin-end {
+        margin-left: 300px;
     }
 }
