@@ -56,7 +56,6 @@ h1 {
 .photos-box {
     width: 70%;
     margin: 0 auto;
-    background-color: purple;
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -66,7 +65,7 @@ h1 {
 
 .black-box {
     width: 30%;
-    height: 100px;
+    max-height: 50%;
     margin: 50px 0;
     background-color: black;
 }
@@ -88,6 +87,9 @@ a {
     color: black;
 }
 
+.img-resize {
+    width: 100%;
+}
 
 /* ------------------------------------------------------- */
 
@@ -96,6 +98,11 @@ a {
 @media ((min-width: 0px) and (max-width: 500px)) {
     .navbar {
         display: none;
+    }
+
+    .photos-box {
+        flex-direction: column;
+        padding-top: 0;
     }
 
     .creazione-navbar {
@@ -117,6 +124,16 @@ a {
         width: 100%;
     }
 
+    .img-resize {
+        width: 100%;
+    }
+
+    .black-box {
+        width: 100%;
+        max-height: 50%;
+        margin: 50px 0;
+        background-color: black;
+    }
 
     li:nth-child(2) {
         margin: 10px auto !important;
@@ -127,6 +144,17 @@ a {
         height: 40px;
         margin: 0 auto;
     }
+}
+
+li:nth-child(2) {
+    margin: 10px auto !important;
+}
+
+li {
+    width: 60%;
+    height: 40px;
+    margin: 0 auto;
+}
 }
 
 @media ((min-width: 500px) and (max-width: 800px)) {
@@ -143,6 +171,7 @@ a {
         width: 70%;
         text-align: center;
     }
+
 
     .mobile-navbar {
         display: flex;
@@ -167,7 +196,7 @@ a {
 
 }
 
-@media ((min-width: 810px) and (max-width: 1300px)) {
+@media ((min-width: 810px) and (max-width: 3200px)) {
     .navbar {
         align-items: center;
         justify-content: center;
