@@ -16,6 +16,7 @@
 * {
     font-family: 'American-type', sans-serif;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 .mobile-navbar {
@@ -35,7 +36,6 @@
 li {
     float: left;
     list-style: none;
-    margin: 1rem 0;
     box-sizing: border-box;
 }
 
@@ -155,7 +155,6 @@ li {
     height: 40px;
     margin: 0 auto;
 }
-}
 
 @media ((min-width: 500px) and (max-width: 800px)) {
     .navbar {
@@ -203,10 +202,31 @@ li {
     }
 
     li:nth-child(2) {
-        margin: 15px 300px !important;
+        margin: 10px 300px !important;
     }
+
+    li {
+        width: 150px;
+        text-align: center;
+    }
+
+    a {
+        width: 100%;
+    }
+
+    .nav-big-screen {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
 
     .box-creazioni {
         width: 20%;
+        text-align: center;
     }
+
 }
