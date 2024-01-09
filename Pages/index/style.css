@@ -36,22 +36,24 @@ ul {
 }
 
 h1 {
-
     width: 50%;
     margin: 10px auto;
     transition: 0.1s ease-in-out;
     cursor: pointer;
 }
 
-h1:hover {
-    margin-bottom: 0;
-    border-bottom: 5px solid #F9E248;
+li:hover a {
+    text-decoration: underline;
+    text-decoration-color: #F9E248;
+    text-decoration-thickness: 5px;
 }
 
 a {
     text-decoration: none;
     color: black;
 }
+
+
 
 .bold {
     font-weight: bold;
@@ -74,6 +76,7 @@ a {
     flex-direction: column;
 
 }
+
 
 .box-logo {
     display: flex;
@@ -196,9 +199,13 @@ a {
     }
 }
 
-@media only screen and (max-width:3200px) {
+@media only screen and (min-width:1200px) {
     li:nth-child(2) {
         margin: 4rem 0;
+    }
+
+    ul {
+        padding: 0 20%;
     }
 
     h1 {
@@ -208,11 +215,17 @@ a {
     .tattoo-text {
         bottom: 23%;
     }
+
+
 }
 
 @media only screen and (max-width: 800px) {
     .tattoo-text {
         bottom: 0%;
+    }
+
+    h1 {
+        width: 100%;
     }
 }
 

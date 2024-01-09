@@ -38,9 +38,12 @@ li:nth-child(2) {
 }
 
 
-li:hover {
-    border-bottom: 5px solid #F9E248;
+li:hover a {
+    text-decoration: underline;
+    text-decoration-color: #F9E248;
+    text-decoration-thickness: 5px;
 }
+
 
 img {
     width: 20%;
@@ -165,6 +168,10 @@ img {
         display: none;
     }
 
+    .text {
+        font-size: 32px;
+    }
+
     .navbar {
         display: none;
     }
@@ -177,6 +184,7 @@ img {
 
     .box-testo {
         width: 100%;
+        margin-top: 0 !important;
     }
 
     .box-due {
@@ -191,6 +199,8 @@ img {
     .box-creazioni {
         width: 70%;
         text-align: center;
+        margin: 0;
+        display: flex;
     }
 
     .mobile-navbar {
@@ -218,9 +228,6 @@ img {
         align-items: center;
     }
 
-    .text-box {
-        width: 100%;
-    }
 
 
     .box-creazioni {
@@ -236,6 +243,10 @@ img {
         margin-top: 50px;
         width: 100%;
         text-align: center;
+    }
+
+    .box-testo {
+        margin-top: 100px;
     }
 }
 
@@ -293,6 +304,7 @@ img {
 
     }
 
+
     .navbar {
         align-items: center;
         justify-content: center;
@@ -311,6 +323,7 @@ img {
 
     .nav-big-screen {
         display: flex;
+        margin: 10px;
         flex-direction: row;
         align-items: center;
         justify-content: center;
