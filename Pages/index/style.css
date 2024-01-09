@@ -25,11 +25,10 @@ li {
     list-style: none;
     text-align: center;
     font-size: 1.3rem;
+    cursor: pointer;
 }
 
-li:nth-child(2) {
-    margin: 6rem 0;
-}
+
 
 ul {
     padding: 0;
@@ -53,6 +52,11 @@ a {
     color: black;
 }
 
+.resize {
+    width: 70%;
+    height: auto;
+}
+
 
 
 .bold {
@@ -74,7 +78,9 @@ a {
     width: 80%;
     display: flex;
     flex-direction: column;
-
+    background-image: url(../../img/Tattoos/tatuaggi-5.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -171,16 +177,12 @@ a {
 
 
 
-    li:nth-child(2) {
-        margin: 3rem 0;
-    }
-
     h1 {
         font-size: 1.8rem;
     }
 
     ul {
-        padding: 0 30%;
+        padding: 0 20%;
     }
 
     .name-container {
@@ -200,21 +202,17 @@ a {
 }
 
 @media only screen and (min-width:1200px) {
-    li:nth-child(2) {
-        margin: 4rem 0;
-    }
 
-    ul {
-        padding: 0 20%;
+
+    li {
+        margin: 3rem auto;
     }
 
     h1 {
         width: 100%;
     }
 
-    .tattoo-text {
-        bottom: 23%;
-    }
+
 
 
 }
@@ -247,9 +245,7 @@ a {
         margin: 0.6rem;
     }
 
-    li:nth-child(2) {
-        margin: 2rem 0;
-    }
+
 
     .text-inside-box {
         font-size: 1.2rem;

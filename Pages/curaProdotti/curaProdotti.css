@@ -29,24 +29,24 @@
 
 .navbar {
     display: flex;
+    width: 100%;
     justify-content: center;
 }
 
 li {
     float: left;
+    width: 20%;
     list-style: none;
-    margin: 1rem 0;
     box-sizing: border-box;
+    text-align: center;
 }
 
-li:nth-child(2) {
-    margin: 1rem 30rem !important;
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
-li:hover {
-    margin-bottom: 0;
-    border-bottom: 5px solid #F9E248;
-}
 
 .creazione-navbar {
     display: flex;
@@ -54,6 +54,17 @@ li:hover {
     justify-content: center;
     width: 75%;
     margin: 20px auto;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration-line: underline;
+    text-decoration-thickness: 5px;
+    text-decoration-color: #F9E248;
 }
 
 .box-creazioni {
@@ -74,36 +85,32 @@ li:hover {
 .articlebox {
     width: 100%;
     height: 100%;
-    border: 1px solid black;
 }
 
 .black-box {
-    width: 30%;
+    width: 40%;
     height: 100%;
-    background-color: black;
 }
 
 .squares-box {
     width: 70%;
-    background-color: red;
 }
 
-.margin-start {
-    margin-left: 150px;
-}
-
-.margin-end {
-    margin-left: 350px;
-}
 
 .text-box {
     width: 50%;
-    background-color: blueviolet
 }
 
 .square-position {
     display: flex;
+    justify-content: space-between;
     height: 100%
+}
+
+.img-resize {
+    width: 100%;
+    height: 80%;
+    margin-left: 50px;
 }
 
 /* ------------------------------------------------------- */
@@ -111,6 +118,24 @@ li:hover {
 /* Responsive */
 
 @media ((min-width: 0px) and (max-width: 500px)) {
+
+    .square-position {
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+
+
+    .img-resize {
+        width: 100%;
+        height: 120%;
+        margin-left: 0;
+    }
+
+
     .navbar {
         display: none;
     }
@@ -123,6 +148,7 @@ li:hover {
     .box-creazioni {
         width: 70%;
         text-align: center;
+        font-size: 1.7rem;
     }
 
     .mobile-navbar {
@@ -134,12 +160,10 @@ li:hover {
         width: 100%;
     }
 
-    li:nth-child(2) {
-        margin: 10px auto !important;
-    }
+
 
     li {
-        width: 60%;
+        width: 80%;
         height: 40px;
         margin: 0 auto;
     }
@@ -158,8 +182,8 @@ li:hover {
         height: 50%;
     }
 
-    .square-position {
-        justify-content: space-between;
+    .black-box {
+        margin: 50px 0px;
     }
 
     .margin-start {
@@ -171,12 +195,11 @@ li:hover {
     }
 
     .squares-box {
-        margin-top: 1rem;
         width: 100%;
     }
 
     .black-box {
-        width: 40%;
+        width: 100%;
     }
 
     .box-creazioni {
@@ -184,7 +207,7 @@ li:hover {
     }
 
     h1 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
 
     }
 }
@@ -214,11 +237,6 @@ li:hover {
     }
 
 
-
-    li:nth-child(2) {
-        margin: 10px auto !important;
-    }
-
     li {
         width: 50%;
         height: 40px;
@@ -231,7 +249,7 @@ li:hover {
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
 
     }
 
@@ -258,7 +276,7 @@ li:hover {
     .margin-end {
         margin-left: 300px;
 
-
-
     }
+
+
 }
